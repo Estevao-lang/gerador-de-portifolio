@@ -1,0 +1,121 @@
+/* public/css/styles.css */
+
+*{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #333;
+  background-color:hsl(353, 90%, 58%);
+
+}
+
+.text-main{
+  color: white;
+  font-size: 30px;
+  width: 30em;
+  margin: 0 50px 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main{
+  display: flex;
+  background-color:hsl(353, 90%, 58%);
+  height: 50rem;
+
+
+}
+nav{
+  background-color:hsl(353, 90%, 58%);
+
+}
+.formulario{
+  display: flex;
+  justify-content: end;
+  text-align: center;
+  margin-right: 20px ;
+  height: 65rem;
+
+}
+form {
+    width: 30rem;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    z-index: 1;
+    border-radius: 20px;
+   
+
+
+}
+.text-main h1 {
+  margin-bottom: 8rem;
+}
+.text-description{
+  margin-top: 20rem;
+  display: flex;
+  text-align: end;
+  justify-content: center;
+  background-color:hsl(353, 90%, 58%);
+  color: white;
+  text-align: center;
+}
+.text{
+  padding: 50px;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+h2 {
+margin: 20px;
+color: white;
+}
+
+h1{
+  color: white;
+}
+button {
+    background-color: #4285f4;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer{
+
+  background-color:hsl(353, 90%, 58%);
+  height: 100%;
+  padding-top: 10rem;
+}
+
+.video{
+text-align: center;
+background-color:hsl(353, 90%, 58%);
+
+}
+.copy {
+  color: white;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+}
+
+.copy a {
+  text-decoration: none;
+  color: white;
+  margin-left: 5px;
+}
