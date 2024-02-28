@@ -10,26 +10,32 @@
 
     <h2>Projetos</h2>
     <ul>
-        @foreach($projetos as $projeto)
-            <li>{{ $projeto->title }} - {{ $projeto->description }}</li>
-        @endforeach
+        @forelse($projetos as $projeto)
+            <li>{{ $projeto->nome }} - {{ $projeto->descricao }}</li>
+        @empty
+            <li>Nenhum projeto disponível</li>
+        @endforelse
     </ul>
 
     <h2>Experiências Profissionais</h2>
     <ul>
-        @foreach($experienciasProfissionais as $experiencia)
-            <li>{{ $experiencia->title }} - {{ $experiencia->description }}</li>
-        @endforeach
+        @forelse($experienciasProfissionais as $experiencia)
+            <li>{{ $experiencia->cargo }} - {{ $experiencia->descricao }}</li>
+        @empty
+            <li>Nenhuma experiência profissional disponível</li>
+        @endforelse
     </ul>
 
     <h2>Sobre Mim</h2>
-    <p>{{ $sobreMim->content }}</p>
+    <p>{{ $sobreMim->content ?? 'Nenhuma informação disponível' }}</p>
 
     <h2>Redes Sociais</h2>
     <ul>
-        @foreach($redesSociais as $redeSocial)
+        @forelse($redesSociais as $redeSocial)
             <li>{{ $redeSocial->platform }} - {{ $redeSocial->url }}</li>
-        @endforeach
+        @empty
+            <li>Nenhuma rede social disponível</li>
+        @endforelse
     </ul>
 </body>
 </html>

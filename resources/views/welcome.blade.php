@@ -19,7 +19,7 @@
 
    <main>
 <div class="text-main">
-   <h1>Encontrou uma oportunidade incrível e precisa de um portfólio para se destacar? Não se preocupe!</h1><p>E Crie o seu de forma rápida e <b>gratuita</b> com o nosso Gerador de Portfólio. Destaque suas habilidades, projetos e experiências de maneira profissional. Não deixe escapar essa chance, comece agora!</p>
+   <h1>Encontrou uma oportunidade incrível e precisa de um portfólio para se destacar? Não se preocupe!</h1><p>Crie o seu de forma rápida e <b>gratuita</b> com o nosso Gerador de Portfólio. Destaque suas habilidades, projetos e experiências de maneira profissional. Não deixe escapar essa chance, comece agora!</p>
 </div>
    <div class="formulario">
 
@@ -28,41 +28,41 @@
 
         <!-- Informações Pessoais -->
         <h2>Informações Pessoais</h2>
-        <label for="nome">Nome:</label>
-        <input type="text" name="nome" required>
+  
+        <input placeholder="Nome" type="text" name="nome" required>
 
-        <label for="sobrenome">Sobrenome:</label>
-        <input type="text" name="sobrenome" required>
+      
+        <input type="text" placeholder="Sobrenome" name="sobrenome" required>
 
-        <label for="email">E-mail:</label>
-        <input type="email" name="email" required>
+    
+        <input type="email" placeholder="mail" name="email" required>
 
         <!-- Experiência Profissional -->
         <h2>Experiência Profissional</h2>
-        <label for="cargo">Cargo:</label>
-        <input type="text" name="cargo" required>
 
-        <label for="empresa">Empresa:</label>
-        <input type="text" name="empresa" required>
+        <input type="text" placeholder="Cargo" name="cargo" required>
 
-        <label for="descricao">Descrição:</label>
-        <textarea name="descricao" rows="4" required></textarea>
+        <input type="text" name="empresa" placeholder="Empresa" required>
+
+    
+        <input type="text" name="descricao" placeholder="Descrição" required>
+   
 
         <!-- Projetos -->
         <h2>Projetos</h2>
-        <label for="projeto">Nome do Projeto:</label>
-        <input type="text" name="projeto" required>
+          <input type="text" placeholder="Nome do Projeto:" name="projeto" required>
 
-        <label for="descricao_projeto">Descrição do Projeto:</label>
-        <textarea name="descricao_projeto" rows="4" required></textarea>
+        <input name="descricao_projeto" placeholder="Descrição do Projeto" required>
+        
+        
 
         <!-- Redes Sociais -->
         <h2>Redes Sociais</h2>
-        <label for="linkedin">LinkedIn:</label>
-        <input type="text" name="linkedin">
+        
+        <input type="text" placeholder="LinkedIn" name="linkedin">
 
-        <label for="github">GitHub:</label>
-        <input type="text" name="github">
+       
+        <input type="text" placeholder="GitHub" name="github">
 
         <!-- Outros Campos Adicionais -->
         <!-- Adicione campos adicionais conforme necessário -->
@@ -91,19 +91,89 @@
         </div>
 
        </div>
-        <div class="video">
-            <h1>Oque é um portifolio?</h1>
-        <video width="640" height="360" controls>
-        <source src="{{ asset('videos/portifolio.mp4') }}" type="video/mp4">
-      
-    </video>
+       <div class="oque">
+    <div class="video">
+        <h1>O que é um portfólio?</h1>
+        <a data-fancybox href="{{ asset('videos/portifolio.mp4') }}">
+            <img src="{{ asset('imagem/tumbnail/tumb.png') }}" alt="Thumbnail do Vídeo">
+        </a>
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+        $(".fancybox").fancybox({
+            type: "iframe", // Pode ser "iframe" para vídeos
+            iframe: {
+                preload: false // Evita o pré-carregamento do iframe para melhorar o desempenho
+            },
+            animationEffect: "fade",
+            transitionEffect: "slide",
+            buttons: [
+                "zoom",
+                "share",
+                "slideShow",
+                "fullScreen",
+                "download",
+                "thumbs",
+                "close"
+            ]
+        });
+    });
+</script>
+
+    <div class="oquetxt">
+        <div class="oqtext">
+        <img src="{{ asset('imagem/icon/narrativa (1).png') }}" width="80px" alt="Thumbnail do Vídeo">
+          <h1>Construa Sua Narrativa Profissional com um Portfólio Impactante</h1> 
+           <p>Em um mundo cada vez mais digital e competitivo, apresentar sua jornada profissional de maneira envolvente e visualmente atraente é essencial. Seu portfólio é a vitrine que revela não apenas suas habilidades técnicas, mas também a sua criatividade, paixão e experiências únicas.</p>
         </div>
-       
+
+        <div class="oqtext">
+        <img src="{{ asset('imagem/icon/conquistas.png') }}" width="80px" alt="Thumbnail do Vídeo">
+          <h1>Destaque Suas Conquistas</h1> 
+           <p>Seja projetos inovadores, colaborações notáveis ou desafios superados, seu portfólio é o palco para exibir suas conquistas de forma clara e persuasiva. Cada projeto compartilhado conta uma história, proporcionando aos espectadores uma visão autêntica do seu talento e dedicação.</p>
+        </div>
+
+        <div class="oqtext">
+        <img src="{{ asset('imagem/icon/habilidade.png') }}" width="80px" alt="Thumbnail do Vídeo">
+          <h1>Mostre Sua Diversidade</h1> 
+           <p>Diversidade é a chave para um portfólio impactante. Apresente uma ampla gama de projetos e habilidades para revelar a versatilidade que você oferece. Seja na área de design, desenvolvimento, escrita ou qualquer outra disciplina, sua diversidade reflete sua adaptabilidade e prontidão para enfrentar desafios diversos.</p>
+        </div>
+
+        <div class="oqtext">
+        <img src="{{ asset('imagem/icon/cerebro.png') }}" width="80px" alt="Thumbnail do Vídeo">
+          <h1>Demonstre Seu Processo Criativo</h1> 
+           <p>Não se trata apenas dos resultados finais, mas do processo que leva a eles. Compartilhe insights sobre seu processo criativo, desde a concepção da ideia até a execução e os aprendizados ao longo do caminho. Isso não apenas destaca suas habilidades técnicas, mas também revela sua abordagem única para resolver problemas.</p>
+        </div>
+        <div class="oqtext">
+        <img src="{{ asset('imagem/icon/visuais.png') }}" width="80px" alt="Thumbnail do Vídeo">
+          <h1>Integre Elementos Visuais Impactantes</h1> 
+           <p>Imagens, gráficos, vídeos e outros elementos visuais podem transformar seu portfólio em uma experiência envolvente. Ao apresentar seus projetos de maneira visualmente atraente, você captura a atenção e facilita a compreensão da qualidade e impacto do seu trabalho.</p>
+        </div>
+
+        <div class="oqtext">
+        <img src="{{ asset('imagem/icon/avaliacao.png') }}" width="80px" alt="Thumbnail do Vídeo">
+          <h1>Inclua Depoimentos e Recomendações</h1> 
+           <p>Depoimentos e recomendações de colegas, clientes ou supervisores adicionam uma camada extra de credibilidade ao seu portfólio. Essas avaliações fornecem uma perspectiva externa sobre suas habilidades e contribuem para construir confiança naqueles que exploram seu trabalho.</p>
+        </div>
+
+        <div class="oqtext">
+        <img src="{{ asset('imagem/icon/grafico.png') }}" width="80px" alt="Thumbnail do Vídeo">
+        <h1> O Poder de um Portfólio Bem Elaborado</h1>
+           <p>Seja você um designer, desenvolvedor, escritor ou profissional de qualquer área, seu portfólio é uma ferramenta poderosa para contar sua história profissional de maneira única. Invista tempo e cuidado na criação do seu portfólio, pois ele não é apenas um conjunto de trabalhos, mas uma representação visual da sua jornada profissional.</p>
+        </div>
+
+    </div>
+        
+        </div>
     </section>
     <footer>
     <div class="copy">© 2024 
   <a href="https://www.linkedin.com/in/estev%C3%A3o-gabriel-oliveira-5339aa174/" target="_blank"> Estevão Gabriel Oliveira</a>
 </div>
     </footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 </body>
 </html>

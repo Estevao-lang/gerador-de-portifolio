@@ -39,9 +39,10 @@ nav{
   justify-content: end;
   text-align: center;
   margin-right: 20px ;
-  height: 65rem;
+  height: 55rem;
 
 }
+
 form {
     width: 30rem;
     padding: 20px;
@@ -54,11 +55,34 @@ form {
 
 
 }
+form h2{
+color: rgb(63, 63, 63);
+}
+.oquetxt{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+
+ 
+}
+.video h1{
+  font-size: 50px;
+  margin: 40px;
+}
+.oqtext{
+  width: 20rem;
+  text-align: center;
+  margin: 20px;
+  color: white;
+  
+}
 .text-main h1 {
   margin-bottom: 8rem;
 }
 .text-description{
-  margin-top: 20rem;
+  margin-top: 10rem;
   display: flex;
   text-align: end;
   justify-content: center;
@@ -84,12 +108,17 @@ h1{
   color: white;
 }
 button {
-    background-color: #4285f4;
+    background-color: #F4344A;
     color: #fff;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: 10px;
+}
+input{
+  border-radius: 10px;
+  border: 1px solid lightgray;
 }
 
 footer{
@@ -102,6 +131,7 @@ footer{
 .video{
 text-align: center;
 background-color:hsl(353, 90%, 58%);
+margin-top: 50px;
 
 }
 .copy {

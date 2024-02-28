@@ -3,9 +3,10 @@
 
 namespace App\Models;
 
+
 use Illuminate\Database\Eloquent\Model;
 
 class Projeto extends Model
 {
-    protected $fillable = ['title', 'description'];
+    protected $fillable = ['nome', 'descricao_projeto']; // Adicione esses campos ao array fillable
 }
