@@ -1,12 +1,13 @@
-<?
+<?php
+
 // app/Models/Projeto.php
 
 namespace App\Models;
-
 
 use Illuminate\Database\Eloquent\Model;
 
 class Projeto extends Model
 {
-    protected $fillable = ['nome', 'descricao_projeto']; // Adicione esses campos ao array fillable
+    protected $fillable = ['nome', 'descricao_projeto'];
 }
+

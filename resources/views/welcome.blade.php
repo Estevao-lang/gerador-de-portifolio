@@ -23,47 +23,32 @@
 </div>
    <div class="formulario">
 
-    <form action="{{ route('generatePortfolio') }}" method="POST">
-        @csrf
+   <form action="{{ route('generatePortfolio') }}" method="POST">
+    @csrf
 
-        <!-- Informações Pessoais -->
-        <h2>Informações Pessoais</h2>
-  
-        <input placeholder="Nome" type="text" name="nome" required>
+    <!-- Informações Pessoais -->
+    <h2>Informações Pessoais</h2>
 
-      
-        <input type="text" placeholder="Sobrenome" name="sobrenome" required>
+    <input placeholder="Nome" type="text" name="nome" required>
+    <input type="text" placeholder="Sobrenome" name="sobrenome" required>
+    <input type="email" placeholder="E-mail" name="email" required>
 
-    
-        <input type="email" placeholder="mail" name="email" required>
+    <!-- Experiência Profissional -->
+    <h2>Experiência Profissional</h2>
 
-        <!-- Experiência Profissional -->
-        <h2>Experiência Profissional</h2>
+    <input type="text" placeholder="Cargo" name="cargo" required>
+    <input type="text" name="empresa" placeholder="Empresa" required>
+    <input type="text" name="descricao" placeholder="Descrição" required>
 
-        <input type="text" placeholder="Cargo" name="cargo" required>
+    <!-- Projetos -->
+    <h2>Projetos</h2>
+    <input type="text" placeholder="Nome do Projeto:" name="projeto" required>
+    <input name="descricao_projeto" placeholder="Descrição do Projeto" required>
 
-        <input type="text" name="empresa" placeholder="Empresa" required>
-
-    
-        <input type="text" name="descricao" placeholder="Descrição" required>
-   
-
-        <!-- Projetos -->
-        <h2>Projetos</h2>
-          <input type="text" placeholder="Nome do Projeto:" name="projeto" required>
-
-        <input name="descricao_projeto" placeholder="Descrição do Projeto" required>
-        
-        
-
-        <!-- Redes Sociais -->
-        <h2>Redes Sociais</h2>
-        
-        <input type="text" placeholder="LinkedIn" name="linkedin">
-
-       
-        <input type="text" placeholder="GitHub" name="github">
-
+    <!-- Redes Sociais -->
+    <h2>Redes Sociais</h2>
+    <input type="text" placeholder="LinkedIn" name="linkedin">
+    <input type="text" placeholder="GitHub" name="github">
         <!-- Outros Campos Adicionais -->
         <!-- Adicione campos adicionais conforme necessário -->
 
