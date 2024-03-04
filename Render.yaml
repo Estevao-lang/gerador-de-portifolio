@@ -1,0 +1,2 @@
+buildCommand: "yarn install; yarn build"
+startCommand: "yarn start"  # Adjust this based on how you start your app

@@ -7,10 +7,14 @@
     },
     "devDependencies": {
         "axios": "^1.1.2",
-        "laravel-vite-plugin": "^0.8.0",
-        "vite": "^4.0.0"
+        "laravel-vite-plugin": "^1.0.2",
+        "vite": "^5.1.4"
     },
     "dependencies": {
         "yarn": "^1.22.21"
-    }
+    },
+    "name": "gerador-de-portifolio",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
 }
