@@ -28,14 +28,12 @@
 
     <!-- Informações Pessoais -->
     <h2>Informações Pessoais</h2>
-
     <input placeholder="Nome" type="text" name="nome" required>
     <input type="text" placeholder="Sobrenome" name="sobrenome" required>
     <input type="email" placeholder="E-mail" name="email" required>
 
     <!-- Experiência Profissional -->
     <h2>Experiência Profissional</h2>
-
     <input type="text" placeholder="Cargo" name="cargo" required>
     <input type="text" name="empresa" placeholder="Empresa" required>
     <input type="text" name="descricao" placeholder="Descrição" required>
@@ -49,11 +47,19 @@
     <h2>Redes Sociais</h2>
     <input type="text" placeholder="LinkedIn" name="linkedin">
     <input type="text" placeholder="GitHub" name="github">
-        <!-- Outros Campos Adicionais -->
-        <!-- Adicione campos adicionais conforme necessário -->
 
-        <button type="submit">Gerar Portfólio</button>
-    </form>
+    <!-- Campos Adicionais -->
+    <h2>Campos Adicionais</h2>
+    <input type="text" placeholder="Short Description" name="shortDescription">
+    <input type="text" placeholder="About Yourself" name="aboutYourself">
+    <input type="text" placeholder="Additional Info" name="additionalInfo">
+
+    <!-- Adicione campos adicionais conforme necessário -->
+
+    <button type="submit">Gerar Portfólio</button>
+</form>
+
+
     </div>
     </main>
     <section>

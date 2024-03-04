@@ -84,7 +84,7 @@
       </main>
       <!-- Footer -->
       <footer class="copyright">© 2020 
-        <a href="{{ $replLink ?? 'https://repl.it/@lilykhan' }}" target="_blank">{{ $replAuthor ?? 'Lilykhan' }}</a>
+        <a href="{{ $replLink ?? 'https://portifolio-jvp0.onrender.com/' }}" target="_blank">{{ $replAuthor ?? 'Estevão Gabriel Oliveira' }}</a>
       </footer>
     </div>
     <!-- Repl.it Badge Script -->

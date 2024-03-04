@@ -39,7 +39,8 @@ nav{
   justify-content: end;
   text-align: center;
   margin-right: 20px ;
-  height: 55rem;
+  height: 65rem;
+
 
 }
 
@@ -82,7 +83,7 @@ color: rgb(63, 63, 63);
   margin-bottom: 8rem;
 }
 .text-description{
-  margin-top: 10rem;
+  margin-top: 20rem;
   display: flex;
   text-align: end;
   justify-content: center;
