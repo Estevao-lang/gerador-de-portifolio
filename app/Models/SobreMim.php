@@ -9,5 +9,11 @@ class SobreMim extends Model
 {
     protected $table = 'sobre_mim'; // Adicione esta linha
 
-    protected $fillable = ['nome', 'sobrenome', 'email', 'content'];
+    protected $fillable = ['nome',
+    'sobrenome',
+    'email',
+    'short_description',
+    'about_yourself',
+    'additional_info', 
+];
 }
