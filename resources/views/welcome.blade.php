@@ -85,7 +85,7 @@
        <div class="oque">
     <div class="video">
         <h1>O que é um portfólio?</h1>
-        <a data-fancybox href="{{ asset('videos/portifolio.mp4') }}">
+        <a data-fancybox href="{{ asset('videos/video_20240227171740 (online-video-cutter.com).mp4') }}">
             <img src="{{ asset('imagem/tumbnail/tumb.png') }}" alt="Thumbnail do Vídeo">
         </a>
     </div>
