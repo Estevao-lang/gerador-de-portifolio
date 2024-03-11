@@ -159,6 +159,10 @@ margin-top: 50px;
 
 
 }
+.responsive  a{
+  background-color: #F4344A;
+  color: white;
+}
 .fa img {
   width: 35px;
 }
@@ -247,8 +251,8 @@ font-size: 35px;
   }
 
 .responsive  a{
-    background-color: white;
-    color: black;
+    background-color: #F4344A;
+    color: white;
   }
   .text{
     padding: 10px;
@@ -306,9 +310,9 @@ font-size: 35px;
     text-align: center;
     width: 100%;
   }
-.responsive  a{
-    background-color: white;
-    color: black;
+  .responsive  a{
+    background-color: #F4344A;
+    color: white;
   }
   .text{
     padding: 10px;
