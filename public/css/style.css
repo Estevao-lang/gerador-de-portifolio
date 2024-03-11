@@ -72,6 +72,9 @@ color: rgb(63, 63, 63);
   font-size: 50px;
   margin: 40px;
 }
+.video img{
+  max-width: 100%;
+}
 .oqtext{
   width: 20rem;
   text-align: center;
@@ -149,4 +152,198 @@ margin-top: 50px;
   text-decoration: none;
   color: white;
   margin-left: 5px;
+}
+
+.topnav {
+  overflow: hidden;
+
+
+}
+.fa img {
+  width: 35px;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+opacity: 0.5;
+
+}
+
+
+
+.topnav .icon {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+
+
+/* Dispositivos padrão */
+@media only screen and (max-width: 767px) {
+  /* Estilos para dispositivos menores */
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .text-main{
+    margin-top: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 35px;
+  }
+  .text-main h1{
+    margin-top: 500px;
+font-size: 35px;
+  }
+  .text-main p{
+    margin-top: -100px;
+
+  }
+  .text-description{
+    margin-top: 1000px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .video img{
+    max-width: 100%;
+  }
+
+.responsive  a{
+    background-color: white;
+    color: black;
+  }
+  .text{
+    padding: 10px;
+  }
+  .formulario, form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+ 
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Estilos para dispositivos médios */
+
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .text-main{
+    margin-top: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 35px;
+  }
+  .text-main h1{
+    margin-top: 500px;
+font-size: 35px;
+  }
+  .text-main p{
+    margin-top: -100px;
+
+  }
+  .text-description{
+    margin-top: 1000px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .video img{
+    max-width: 100%;
+  }
+  .formulario, form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+.responsive  a{
+    background-color: white;
+    color: black;
+  }
+  .text{
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* Estilos para dispositivos maiores */
+  .formulario, form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Estilos para dispositivos grandes */
+  .formulario, form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+}
+/* Dispositivos HD (resolução 1920x1080) */
+@media only screen and (min-width: 1601px) {
+  /* Estilos para dispositivos HD */
+    .formulario, form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
 }

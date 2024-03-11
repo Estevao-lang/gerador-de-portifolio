@@ -13,10 +13,28 @@
 </head>
 <body>
    <nav>
-   <img src="{{ asset('imagem/logo.png') }}" alt="Descrição da Imagem">
+   
 
    </nav>
-
+   <div class="topnav" id="myTopnav">
+  <a href="#home" class="active"><img src="{{ asset('imagem/logo.png') }}" alt="Descrição da Imagem"></a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"><img src="{{ asset('imagem/icon/hamburger.png') }}" wi alt="Descrição da Imagem"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
    <main>
 <div class="text-main">
    <h1>Encontrou uma oportunidade incrível e precisa de um portfólio para se destacar? Não se preocupe!</h1><p>Crie o seu de forma rápida e <b>gratuita</b> com o nosso Gerador de Portfólio. Destaque suas habilidades, projetos e experiências de maneira profissional. Não deixe escapar essa chance, comece agora!</p>

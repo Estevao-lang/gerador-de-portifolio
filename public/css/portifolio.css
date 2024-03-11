@@ -189,6 +189,7 @@ a.nav-link{
     justify-content:center;
 	align-items: center;
 	padding: 20px;
+	width: 100%;
 }
 
 .card{
