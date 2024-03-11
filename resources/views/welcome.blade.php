@@ -14,17 +14,17 @@
 <body>
    <nav>
    
-
-   </nav>
    <div class="topnav" id="myTopnav">
   <a href="#home" class="active"><img src="{{ asset('imagem/logo.png') }}" alt="Descrição da Imagem"></a>
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
   <a href="#about">About</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"><img src="{{ asset('imagem/icon/hamburger.png') }}" wi alt="Descrição da Imagem"></i>
+    <i class="fa fa-bars"><img src="{{ asset('imagem/icon/hamburger.png') }}" style="width: 5px;" alt="Descrição da Imagem"></i>
   </a>
 </div>
+   </nav>
+
 <script>
 function myFunction() {
   var x = document.getElementById("myTopnav");
