@@ -1,0 +1,16 @@
+# Deployment job
+deploy:
+  environment:
+    name: github-pages
+    url: ${{ steps.deployment.outputs.page_url }}
+  runs-on: ubuntu-latest
+  needs: build
+  steps:
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
+      with:
+        deploy_key: ${{ secrets.GITHUB_TOKEN }}
+        branch: gh-pages  # ou a branch que você usa para o GitHub Pages
+        folder: _site  # o diretório de construção do Jekyll
+        clean: true  # remove arquivos antigos
