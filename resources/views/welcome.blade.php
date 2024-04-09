@@ -20,7 +20,7 @@
   <a href="#contact">Contact</a>
   <a href="#about">About</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"><img src="{{ asset('imagem/icon/hamburger.png') }}" style="width: 5px;" alt="Descrição da Imagem"></i>
+    <i class="fa fa-bars"><img src="{{ asset('imagem/icon/hamburger.png') }}" class="hamburguer" style="width: 5px;" alt="Descrição da Imagem"></i>
   </a>
 </div>
    </nav>
